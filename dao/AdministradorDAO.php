@@ -40,6 +40,9 @@ class AdministradorDAO extends DB
 				}
 			}
 		}
+		//Probar si funciona
+		//llamar a la superclase para desconectanos
+		//$this->desconectar();
 		if($infoUsuario){
 			return array('result' => true, 'mensaje' => 'Hola '.$infoUuario['nombre'], 'admin' => $infoUsuario);			
 		} else {
